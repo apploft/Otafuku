@@ -27,7 +27,7 @@ import WebKit
 
 public class WebViewPropertyObserver: NSObject {
     public enum WebViewProperty {
-        static let keys = ["title", "URL", "estimatedProgress", "canGoBack", "canGoForward", "hasOnlySecureContent", "loading"]
+        static let keys = ["title", "URL", "estimatedProgress", "canGoBack", "canGoForward", "hasOnlySecureContent", "loading", "scrollView.contentSize"]
         case Title(String?)
         case URL(NSURL?)
         case CanGoBack(Bool)
@@ -35,6 +35,7 @@ public class WebViewPropertyObserver: NSObject {
         case EstimatedProgress(Float)
         case Loading(Bool)
         case HasOnlySecureContent(Bool)
+        case ContentSize(CGSize)
         
         init?(webView: WKWebView, key: String) {
             switch key {
@@ -61,6 +62,9 @@ public class WebViewPropertyObserver: NSObject {
                 
             case "loading":
                 self = .Loading(webView.loading)
+                
+            case "scrollView.contentSize":
+                self = .ContentSize(webView.scrollView.contentSize)
                 
             default:
                 return nil
