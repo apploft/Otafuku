@@ -53,7 +53,7 @@ public class WebViewUIController: NSObject, WKUIDelegate {
         // variable to keep a reference to UIAlertController
         var avc: UIAlertController?
         
-        let okHandler: () -> Void = { handler in
+        let okHandler: () -> Void = {
             if let avc = avc, let textField = avc.textFields?.first {
                 completionHandler(textField.text)
             } else {
