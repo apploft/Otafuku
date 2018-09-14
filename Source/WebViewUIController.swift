@@ -62,7 +62,7 @@ public class WebViewUIController: NSObject, WKUIDelegate {
         }
         
         avc = AlertBuilder(title: nil, message: prompt, preferredStyle: .alert)
-            .addTextFieldHandler() { $0.text = defaultText }
+            .addTextFieldHandler() { $0?.text = defaultText }
             .addAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel) { _ in completionHandler("") }
             .addAction(title: NSLocalizedString("OK", comment: "")) { _ in okHandler() }
             .build()
