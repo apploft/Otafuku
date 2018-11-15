@@ -7,34 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F71493571B3509FD008A359E /* Otafuku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F714934B1B3509FD008A359E /* Otafuku.framework */; };
+		8D65B9D5219D76C8005027B6 /* AlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D65B9D4219D76C8005027B6 /* AlertBuilder.swift */; };
+		8D65B9D7219D76CE005027B6 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D65B9D6219D76CE005027B6 /* UIAlertControllerExtension.swift */; };
 		F714936B1B350A43008A359E /* Otafuku.h in Headers */ = {isa = PBXBuildFile; fileRef = F71493691B350A43008A359E /* Otafuku.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F71493711B350B57008A359E /* OtafukuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F714936E1B350A4D008A359E /* OtafukuTests.swift */; };
 		F71493781B350C04008A359E /* WebViewPropertyObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71493761B350C04008A359E /* WebViewPropertyObserver.swift */; };
 		F71493791B350C04008A359E /* WebViewUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71493771B350C04008A359E /* WebViewUIController.swift */; };
-		F73BBCDE1B39009F00010E03 /* Kamagari.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73BBCDD1B39009F00010E03 /* Kamagari.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		F71493581B3509FD008A359E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F71493421B3509FD008A359E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F714934A1B3509FD008A359E;
-			remoteInfo = Otafuku;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		8D65B9D4219D76C8005027B6 /* AlertBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertBuilder.swift; sourceTree = "<group>"; };
+		8D65B9D6219D76CE005027B6 /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
 		F714934B1B3509FD008A359E /* Otafuku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Otafuku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F71493561B3509FD008A359E /* OtafukuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OtafukuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F71493681B350A43008A359E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F71493691B350A43008A359E /* Otafuku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Otafuku.h; sourceTree = "<group>"; };
-		F714936D1B350A4D008A359E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F714936E1B350A4D008A359E /* OtafukuTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtafukuTests.swift; sourceTree = "<group>"; };
 		F71493761B350C04008A359E /* WebViewPropertyObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewPropertyObserver.swift; sourceTree = "<group>"; };
 		F71493771B350C04008A359E /* WebViewUIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewUIController.swift; sourceTree = "<group>"; };
-		F73BBCDD1B39009F00010E03 /* Kamagari.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kamagari.framework; path = Carthage/Build/iOS/Kamagari.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,15 +29,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F73BBCDE1B39009F00010E03 /* Kamagari.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F71493531B3509FD008A359E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F71493571B3509FD008A359E /* Otafuku.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,8 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				F71493671B350A43008A359E /* Source */,
-				F73BBCDC1B39007A00010E03 /* Libraries */,
-				F714936C1B350A4D008A359E /* Tests */,
 				F714934C1B3509FD008A359E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				F714934B1B3509FD008A359E /* Otafuku.framework */,
-				F71493561B3509FD008A359E /* OtafukuTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,25 +58,10 @@
 				F71493691B350A43008A359E /* Otafuku.h */,
 				F71493761B350C04008A359E /* WebViewPropertyObserver.swift */,
 				F71493771B350C04008A359E /* WebViewUIController.swift */,
+				8D65B9D4219D76C8005027B6 /* AlertBuilder.swift */,
+				8D65B9D6219D76CE005027B6 /* UIAlertControllerExtension.swift */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		F714936C1B350A4D008A359E /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				F714936D1B350A4D008A359E /* Info.plist */,
-				F714936E1B350A4D008A359E /* OtafukuTests.swift */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		F73BBCDC1B39007A00010E03 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				F73BBCDD1B39009F00010E03 /* Kamagari.framework */,
-			);
-			name = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,24 +96,6 @@
 			productReference = F714934B1B3509FD008A359E /* Otafuku.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F71493551B3509FD008A359E /* OtafukuTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F71493641B3509FD008A359E /* Build configuration list for PBXNativeTarget "OtafukuTests" */;
-			buildPhases = (
-				F71493521B3509FD008A359E /* Sources */,
-				F71493531B3509FD008A359E /* Frameworks */,
-				F71493541B3509FD008A359E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F71493591B3509FD008A359E /* PBXTargetDependency */,
-			);
-			name = OtafukuTests;
-			productName = OtafukuTests;
-			productReference = F71493561B3509FD008A359E /* OtafukuTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -167,11 +109,7 @@
 				TargetAttributes = {
 					F714934A1B3509FD008A359E = {
 						CreatedOnToolsVersion = 6.3.2;
-						LastSwiftMigration = 0800;
-					};
-					F71493551B3509FD008A359E = {
-						CreatedOnToolsVersion = 6.3.2;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -188,20 +126,12 @@
 			projectRoot = "";
 			targets = (
 				F714934A1B3509FD008A359E /* Otafuku */,
-				F71493551B3509FD008A359E /* OtafukuTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F71493491B3509FD008A359E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F71493541B3509FD008A359E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -215,28 +145,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D65B9D7219D76CE005027B6 /* UIAlertControllerExtension.swift in Sources */,
+				8D65B9D5219D76C8005027B6 /* AlertBuilder.swift in Sources */,
 				F71493781B350C04008A359E /* WebViewPropertyObserver.swift in Sources */,
 				F71493791B350C04008A359E /* WebViewUIController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F71493521B3509FD008A359E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F71493711B350B57008A359E /* OtafukuTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F71493591B3509FD008A359E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F714934A1B3509FD008A359E /* Otafuku */;
-			targetProxy = F71493581B3509FD008A359E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F714935F1B3509FD008A359E /* Debug */ = {
@@ -340,17 +256,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.tasanobu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -361,10 +274,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,42 +282,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		F71493651B3509FD008A359E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.tasanobu.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		F71493661B3509FD008A359E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.tasanobu.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -428,15 +303,6 @@
 			buildConfigurations = (
 				F71493621B3509FD008A359E /* Debug */,
 				F71493631B3509FD008A359E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F71493641B3509FD008A359E /* Build configuration list for PBXNativeTarget "OtafukuTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F71493651B3509FD008A359E /* Debug */,
-				F71493661B3509FD008A359E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

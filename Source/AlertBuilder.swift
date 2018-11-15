@@ -11,21 +11,21 @@ import UIKit
 public class AlertBuilder {
     private var alertController: UIAlertController
     
-    public init(title: String? = nil, message: String? = nil, preferredStyle: UIAlertControllerStyle) {
+    public init(title: String? = nil, message: String? = nil, preferredStyle: UIAlertController.Style) {
         self.alertController = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
     }
     
-    public func setTitle(title: String) -> Self {
+    public func setTitle(_ title: String) -> Self {
         alertController.title = title
         return self
     }
     
-    public func setMessage(message: String) -> Self {
+    public func setMessage(_ message: String) -> Self {
         alertController.message = message
         return self
     }
     
-    public func setPopoverPresentationProperties(sourceView sourceView: UIView? = nil, sourceRect:CGRect? = nil, barButtonItem: UIBarButtonItem? = nil, permittedArrowDirections: UIPopoverArrowDirection? = nil) -> Self {
+    public func setPopoverPresentationProperties(sourceView: UIView? = nil, sourceRect:CGRect? = nil, barButtonItem: UIBarButtonItem? = nil, permittedArrowDirections: UIPopoverArrowDirection? = nil) -> Self {
         
         if let poc = alertController.popoverPresentationController {
             if let view = sourceView {
@@ -45,13 +45,13 @@ public class AlertBuilder {
         return self
     }
     
-    public func addAction(title title: String = "", style: UIAlertActionStyle = .Default, handler: ((UIAlertAction!) -> Void) = { _ in }) -> Self {
+    public func addAction(title: String = "", style: UIAlertAction.Style = .default, handler: @escaping ((UIAlertAction) -> Void) = { _ in }) -> Self {
         alertController.addAction(UIAlertAction(title: title, style: style, handler: handler))
         return self
     }
     
-    public func addTextFieldHandler(handler: ((UITextField!) -> Void) = { _ in }) -> Self {
-        alertController.addTextFieldWithConfigurationHandler(handler)
+    public func addTextFieldHandler(_ handler: @escaping ((UITextField) -> Void) = { _ in }) -> Self {
+        alertController.addTextField(configurationHandler: handler)
         return self
     }
     

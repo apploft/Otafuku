@@ -9,6 +9,5 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/tasanobu/Otafuku.git', :tag => s.version }
   s.ios.deployment_target = '8.0'
   s.source_files = 'Source/*.swift'
-  s.dependency 'Kamagari', '~> 1.2.0'
   s.requires_arc = true
 end
